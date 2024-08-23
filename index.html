@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONANZA | БОНАНЗА | Биты</title>
+    <link rel="icon" href="./img/bonanza logo (1).png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/bonanza logo (1).png" alt="bonanza" class="icon">
+            <nav>
+                <ul class="nav__links">
+                    <a class="catalog" href="./excel/прайс.xlsx">Каталог</a>
+                    <li><a href="./about.html">О нас</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="phone">Телефон: <span>+380 677 176-148</span></a>
+        </header>
+            <h1 class="h1-text">BONANZA</h1>
+            <h2 class="h2-text">Лучшие биты на просторах Интернета</h2>
+            <h3 class="h3-text">Построй свое будущее с нами!</h3>
+    
+            <div class="bits">
+                <div class="bit">
+                    <img src="./img/Трискачка.webp" alt="bit-1" class="first-img"> <!-- first -->
+                    <p class="bit-text">Трискачка для бит</p>
+                    <p class="bit-is-here">Есть в наличии</p>
+                    <p class="price">Цена опт: 150.99 ₴</p>
+                </div>
+                <div class="bit">
+                    <img src="./img/PH2 250мм.webp" alt="250mm" class="second-img"> <!-- second -->
+                    <p class="bit-text">Бита PH2 250mm (1шт)</p>
+                    <p class="bit-is-here">Есть в наличии</p>
+                    <p class="price">Цена опт: 133.99 ₴</p>
+                </div>
+                <div class="bit">
+                    <img src="./img/PH2 200mm.webp" alt="200mm" class="third-img"> <!-- third -->
+                    <p class="bit-text">Бита PH2 200mm (1шт)</p>
+                    <p class="bit-is-here">Есть в наличии</p>
+                    <p class="price">Цена опт: 123.99 ₴</p>
+                </div>
+                <div class="bit">
+                    <img src="./img/SW4 шестигранник.webp" alt="SW4" class="fourth-img"> <!-- fourth -->
+                    <p class="bit-text">Бита SW4 шестигранник (1шт)</p>
+                    <p class="bit-is-here">Есть в наличии</p>
+                    <p class="price">Цена опт: 69 ₴</p>
+                </div>
+                <div class="bit">
+                    <img src="./img/PZ1 1;4 50mm.webp" alt="PZ1" class="fifth-img"> <!-- fifth -->
+                    <p class="bit-text">Бита PZ1 1/4" 50mm (1шт)</p>
+                    <p class="bit-is-here">Есть в наличии</p>
+                    <p class="price">Цена опт: 21 ₴</p>
+                </div>
+                <div class="bit">
+                    <img src="./img/PH2 90mm.webp" alt="PZ1" class="sixth-img"> <!-- sixth -->
+                    <p class="bit-text">Бита PH2 90mm (1шт)</p>
+                    <p class="bit-is-here">Есть в наличии</p>
+                    <p class="price">Цена опт: 43.99 ₴</p>
+                </div>
+                <div class="bit">
+                    <img src="./img/PH2 50mm.webp" alt="PZ1" class="seventh-img"> <!-- seven -->
+                    <p class="bit-text">Бита PH2 50mm (1шт)</p>
+                    <p class="bit-is-here">Есть в наличии</p>
+                    <p class="price">Цена опт: 21 ₴</p>
+                </div>
+                <div class="bit">
+                    <img src="./img/PH2 127mm.webp" alt="PZ1" class="eighth-img"> <!-- eighth -->
+                    <p class="bit-text">Бита PH2 127mm (1шт)</p>
+                    <p class="bit-is-here">Есть в наличии</p>
+                    <p class="price">Цена опт: 56.99 ₴</p>
+                </div>
+                <div class="bit">
+                    <img src="./img/PH2 150mm.webp" alt="PZ1" class="ninth-img"> <!-- ninth -->
+                    <p class="bit-text">Бита PH2" 150mm (1шт)</p>
+                    <p class="bit-is-here">Есть в наличии</p>
+                    <p class="price">Цена опт: 60.99 ₴</p>
+                </div>
+                <div class="bit">
+                    <img src="./img/PH2 50mm (2).webp" alt="PZ1" class="ten-img"> <!-- ten -->
+                    <p class="bit-text">Бита PH2 50mm (1шт)</p>
+                    <p class="bit-is-here">Есть в наличии</p>
+                    <p class="price">Цена опт: 21 ₴</p>
+                </div>
+                <div class="bit">
+                    <img src="./img/PH2 70mm.webp" alt="PZ1" class="eleventh-img"> <!-- eleven -->
+                    <p class="bit-text">Бита PH2 70mm (1шт)</p>
+                    <p class="bit-is-here">Есть в наличии</p>
+                    <p class="price">Цена опт: 43.99 ₴</p>
+                </div>
+            </div>
+    </div>
+        <script>
+            const copyButton = document.querySelector('.phone');
+            const textCopy = "+380 677 176-148";
+
+            copyButton.addEventListener('click', () => {
+                navigator.clipboard.writeText(textCopy)
+                .then(() => {
+                    alert("Скопировано!")
+                })
+                .catch(err => {
+                    console.error("Не удалось скопировать номер!", err);
+                })
+            });
+        </script>
+</body>
+</html>
